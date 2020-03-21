@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Vuex | duoduo</title>
+    <meta name="description" content="我的个人博客">
+    <meta name="generator" content="VuePress 1.4.0">
+    <link rel="icon" href="/logo.png">
+    
+    <link rel="preload" href="/assets/css/0.styles.c8dda0a3.css" as="style"><link rel="preload" href="/assets/js/app.2ba1e459.js" as="script"><link rel="preload" href="/assets/js/2.85e0188b.js" as="script"><link rel="preload" href="/assets/js/12.29f8ffe0.js" as="script"><link rel="prefetch" href="/assets/js/10.8974f600.js"><link rel="prefetch" href="/assets/js/11.c5afaf4d.js"><link rel="prefetch" href="/assets/js/13.72d8472d.js"><link rel="prefetch" href="/assets/js/14.7281b32d.js"><link rel="prefetch" href="/assets/js/15.112e25e7.js"><link rel="prefetch" href="/assets/js/16.8e5d43a7.js"><link rel="prefetch" href="/assets/js/17.5f416062.js"><link rel="prefetch" href="/assets/js/18.ad288b39.js"><link rel="prefetch" href="/assets/js/19.a74f651a.js"><link rel="prefetch" href="/assets/js/20.4545d333.js"><link rel="prefetch" href="/assets/js/21.f382fe96.js"><link rel="prefetch" href="/assets/js/22.b82138c3.js"><link rel="prefetch" href="/assets/js/23.3573f322.js"><link rel="prefetch" href="/assets/js/24.3b2ba7ee.js"><link rel="prefetch" href="/assets/js/3.77fa11a2.js"><link rel="prefetch" href="/assets/js/4.992b99eb.js"><link rel="prefetch" href="/assets/js/5.19f05749.js"><link rel="prefetch" href="/assets/js/6.0a7a7c97.js"><link rel="prefetch" href="/assets/js/7.e62bd360.js"><link rel="prefetch" href="/assets/js/8.231d87cc.js"><link rel="prefetch" href="/assets/js/9.f873c084.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.c8dda0a3.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">duoduo</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/architect/" class="nav-link router-link-active">
+  前端系列
+</a></div><div class="nav-item"><a href="/spring/" class="nav-link">
+  Spring
+</a></div><div class="nav-item"><a href="/dao/" class="nav-link">
+  持久层
+</a></div><div class="nav-item"><a href="/else/" class="nav-link">
+  Else
+</a></div><div class="nav-item"><a href="/About/" class="nav-link">
+  About
+</a></div><div class="nav-item"><a href="https://github.com/duo-duo" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/architect/" class="nav-link router-link-active">
+  前端系列
+</a></div><div class="nav-item"><a href="/spring/" class="nav-link">
+  Spring
+</a></div><div class="nav-item"><a href="/dao/" class="nav-link">
+  持久层
+</a></div><div class="nav-item"><a href="/else/" class="nav-link">
+  Else
+</a></div><div class="nav-item"><a href="/About/" class="nav-link">
+  About
+</a></div><div class="nav-item"><a href="https://github.com/duo-duo" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/architect/Vue/" class="sidebar-link">Vue</a></li><li><a href="/architect/Vue/vue-router.html" class="sidebar-link">1.Vue-router</a></li><li><a href="/architect/Vue/element-ui.html" class="sidebar-link">element-ui</a></li><li><a href="/architect/Vue/axios.html" class="sidebar-link">axios</a></li><li><a href="/architect/Vue/vuex.html" class="active sidebar-link">Vuex</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="vuex"><a href="#vuex" class="header-anchor">#</a> Vuex</h1> <blockquote><p>Vuex是什么？
+简单来说：对Vue应用中多个组件的共享状态进行集中式的管理</p></blockquote> <p><em>安装</em></p> <div class="language-shell script extra-class"><pre class="language-shell"><code>    <span class="token function">npm</span> <span class="token function">install</span> vuex --save
+</code></pre></div><p><strong>vuex是vue中的一个组件
+在使用时，需要导入，在main.js中显示的声明使用该插件
+Vue.use(Vuex);</strong></p> <blockquote><p>代码实例</p></blockquote> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token comment">//使用Vuex做一个例子</span>
+    
+<span class="token keyword">import</span> Vue <span class="token keyword">from</span> <span class="token string">'vue'</span>
+<span class="token keyword">import</span> Vuex <span class="token keyword">from</span> <span class="token string">'vuex'</span>
+
+
+Vue<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span>Vuex<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+
+<span class="token comment">//状态对象</span>
+<span class="token keyword">const</span> state <span class="token operator">=</span> <span class="token punctuation">{</span>
+    count<span class="token operator">:</span><span class="token number">0</span>        <span class="token comment">//初始的状态值</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token comment">//包含多个更新state函数的对象</span>
+<span class="token keyword">const</span> mutations <span class="token operator">=</span> <span class="token punctuation">{</span>    <span class="token comment">//commit之后具体修改state的方法</span>
+    <span class="token function">ExampleMEthod1</span><span class="token punctuation">(</span><span class="token parameter">state</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token comment">//具体的修改state值</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token function">ExampleMethod2</span><span class="token punctuation">(</span><span class="token parameter">state</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token comment">//</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token comment">//包含多个对应事件回调函数的对象</span>
+<span class="token keyword">const</span> actions <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token function">example</span><span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">{</span>commit<span class="token punctuation">,</span>state<span class="token punctuation">}</span><span class="token punctuation">,</span>data</span><span class="token punctuation">)</span><span class="token punctuation">{</span>    <span class="token comment">//由前台dispatch分发action到此执行该action  this.$store.dispatch('eample');</span>
+        <span class="token function">commit</span><span class="token punctuation">(</span><span class="token string">'ExampleMethod1'</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//命名提交</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token function">exampleAsync</span><span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">{</span>commit<span class="token punctuation">}</span></span><span class="token punctuation">)</span><span class="token punctuation">{</span>    <span class="token comment">//在action还可以直接执行异步的代码</span>
+        <span class="token function">setTimeout</span><span class="token punctuation">(</span><span class="token punctuation">{</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">=&gt;</span><span class="token punctuation">{</span>
+            <span class="token function">commit</span><span class="token punctuation">(</span><span class="token string">'ExampleMethod2'</span><span class="token punctuation">)</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span><span class="token number">1000</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token comment">//包含多个getter计算属性函数的对象</span>
+<span class="token keyword">const</span> getters <span class="token operator">=</span> <span class="token punctuation">{</span>
+    读取属性值
+    <span class="token function">exampleGetter</span><span class="token punctuation">(</span><span class="token parameter">state</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">return</span> state<span class="token punctuation">.</span>count    <span class="token comment">//这里可以初次判断回显到页面 this.$store.getters.exampleGetter; 不用加括号，加括号表示调用方法，我们只是为了读取属性值</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">new</span> <span class="token class-name">Vuex<span class="token punctuation">.</span>Store</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    state<span class="token punctuation">,</span> <span class="token comment">//状态对象</span>
+    mutations<span class="token punctuation">,</span> <span class="token comment">//包含多个更新state函数的对象</span>
+    actions<span class="token punctuation">,</span> <span class="token comment">//包含多个对应事件回调函数的对象</span>
+    getters <span class="token comment">//包含多个getter计算属性函数的对象</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">//实际的操作中，可能各个vuex的state、mutations、actions、getters会分开写</span>
+
+
+<span class="token comment">//回显数据页面可以使用vuex自带的API</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span>mapActions<span class="token punctuation">,</span>mapGetters<span class="token punctuation">,</span>mapState<span class="token punctuation">}</span> form <span class="token string">'vuex'</span><span class="token punctuation">;</span>
+
+<span class="token comment">//render配置：</span>
+<span class="token comment">//在main.js中还可以这样加入APP组件</span>
+<span class="token keyword">new</span> <span class="token class-name">Vue</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    el<span class="token operator">:</span><span class="token string">'#app'</span><span class="token punctuation">,</span>
+    <span class="token function-variable function">render</span><span class="token operator">:</span><span class="token parameter">h</span> <span class="token operator">=&gt;</span> <span class="token function">h</span><span class="token punctuation">(</span>App<span class="token punctuation">)</span>  <span class="token comment">// =&gt; 表示执行其后面的函数并且带上一个返回值</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+
+</code></pre></div><p>由于我是看的尚硅谷的学习视频，我在老师讲的这一节学到了一个新语法ES6的语法<br>
+...  三个点的语法替代了以往的ES5的apply()方法
+如果你在控制台输入console.log(...[1,2,3]);<br>
+打印结果会是1   2   3，主要用于函数调用</p> <p>另外还有sessionStorage 和 localStorage</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token comment">//js字符串和数组的互相转换：</span>
+<span class="token comment">//1、JSON.parse将字符串转成数组</span>
+    <span class="token keyword">var</span> text1 <span class="token operator">=</span> <span class="token string">'{ &quot;name&quot;:&quot;abc&quot;, &quot;initDate&quot;:&quot;2018-12-14&quot;, &quot;site&quot;:&quot;www.baidu.com&quot;}'</span><span class="token punctuation">;</span>
+    <span class="token keyword">var</span> obj1 <span class="token operator">=</span> <span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">parse</span><span class="token punctuation">(</span>text1<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'JSON.parse:'</span><span class="token punctuation">,</span>obj1<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    打印结果：<span class="token punctuation">{</span>name<span class="token operator">:</span><span class="token string">&quot;abc&quot;</span><span class="token punctuation">}</span>
+<span class="token comment">//2、JSON.stringify将数组转成字符串</span>
+    <span class="token keyword">var</span> text2 <span class="token operator">=</span> <span class="token punctuation">{</span> <span class="token string">&quot;name&quot;</span><span class="token operator">:</span><span class="token string">&quot;abc&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;alexa&quot;</span><span class="token operator">:</span><span class="token number">10000</span><span class="token punctuation">,</span> <span class="token string">&quot;site&quot;</span><span class="token operator">:</span><span class="token string">&quot;www.baisu.com&quot;</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+    <span class="token keyword">var</span> obj2 <span class="token operator">=</span> <span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">stringify</span><span class="token punctuation">(</span>text2<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'JSON.stringify:'</span><span class="token punctuation">,</span>obj2<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">//js LocalStorage： 本地浏览器存储数据</span>
+    localStorage<span class="token punctuation">.</span><span class="token function">setItem</span><span class="token punctuation">(</span><span class="token string">&quot;key&quot;</span><span class="token punctuation">,</span><span class="token string">&quot;value&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>                   <span class="token comment">// 存储变量名为key，值为value的变量</span>
+    localStorage<span class="token punctuation">.</span>key <span class="token operator">=</span> <span class="token string">&quot;value&quot;</span>                             <span class="token comment">// 同setItem方法，存储数据</span>
+    <span class="token keyword">var</span> valueLocal <span class="token operator">=</span> localStorage<span class="token punctuation">.</span><span class="token function">getItem</span><span class="token punctuation">(</span><span class="token string">&quot;key&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment">// 读取存储变量名为key的values值</span>
+    <span class="token keyword">var</span> valueLocal <span class="token operator">=</span> localStorage<span class="token punctuation">.</span>key<span class="token punctuation">;</span>   <span class="token comment">// 同getItem，读取数据</span>
+    localStorage<span class="token punctuation">.</span><span class="token function">removeItem</span><span class="token punctuation">(</span><span class="token string">'key'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>                        <span class="token comment">// removeItem方法，删除变量名为key的存储变量</span>
+    localStorage<span class="token punctuation">.</span><span class="token function">clear</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>                                  <span class="token comment">// clear方法，清除所有保存的数据</span>
+    <span class="token comment">// 利用length属性和key方法，遍历所有的数据for(var i = 0; i &lt; localStorage.length; i++)</span>
+    <span class="token punctuation">{</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>localStorage<span class="token punctuation">.</span><span class="token function">key</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token comment">// 存储 localStorage 数据为 Json 格式</span>
+    value <span class="token operator">=</span> <span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">stringify</span><span class="token punctuation">(</span>jsonValue<span class="token punctuation">)</span><span class="token punctuation">;</span>    <span class="token comment">// 将 JSON 对象 jsonValue 转化成字符串</span>
+    localStorage<span class="token punctuation">.</span><span class="token function">setItem</span><span class="token punctuation">(</span><span class="token string">&quot;key&quot;</span><span class="token punctuation">,</span> value<span class="token punctuation">)</span><span class="token punctuation">;</span>                    <span class="token comment">// 用 localStorage 保存转化好的的字符串</span>
+
+    <span class="token comment">// 读取 localStorage 中 Json 格式数据var value = localStorage.getItem(&quot;key&quot;);              // 取回 value 变量</span>
+    jsonValue <span class="token operator">=</span> <span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">parse</span><span class="token punctuation">(</span>value<span class="token punctuation">)</span><span class="token punctuation">;</span>                        <span class="token comment">// 把字符串转换成 JSON 对象</span>
+
+<span class="token comment">//js sessionStorage:</span>
+    sessionStorage<span class="token punctuation">.</span><span class="token function">setItem</span><span class="token punctuation">(</span><span class="token string">&quot;key&quot;</span><span class="token punctuation">,</span><span class="token string">&quot;value&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>                 <span class="token comment">// setItem方法，存储变量名为key，值为value的变量</span>
+    <span class="token keyword">var</span> valueSession <span class="token operator">=</span> sessionStorage<span class="token punctuation">.</span><span class="token function">getItem</span><span class="token punctuation">(</span><span class="token string">&quot;key&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>      <span class="token comment">// getItem方法，读取存储变量名为key的值</span>
+    sessionStorage<span class="token punctuation">.</span><span class="token function">removeItem</span><span class="token punctuation">(</span><span class="token string">'key'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>                      <span class="token comment">// removeItem方法，删除变量名为key的存储变量</span>
+    sessionStorage<span class="token punctuation">.</span><span class="token function">clear</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>                                <span class="token comment">// clear方法，清除所有保存数据</span>
+</code></pre></div></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/duo-duo/isduoduo.me/edit/master/architect/Vue/vuex.md" target="_blank" rel="noopener noreferrer">帮助我改善此页面！</a> <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></div> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/architect/Vue/axios.html" class="prev">
+        axios
+      </a></span> <!----></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.2ba1e459.js" defer></script><script src="/assets/js/2.85e0188b.js" defer></script><script src="/assets/js/12.29f8ffe0.js" defer></script>
+  </body>
+</html>

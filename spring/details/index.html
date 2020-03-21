@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>SpringBoot 入门 | duoduo</title>
+    <meta name="description" content="我的个人博客">
+    <meta name="generator" content="VuePress 1.4.0">
+    <link rel="icon" href="/logo.png">
+    
+    <link rel="preload" href="/assets/css/0.styles.c8dda0a3.css" as="style"><link rel="preload" href="/assets/js/app.2ba1e459.js" as="script"><link rel="preload" href="/assets/js/2.85e0188b.js" as="script"><link rel="preload" href="/assets/js/20.4545d333.js" as="script"><link rel="prefetch" href="/assets/js/10.8974f600.js"><link rel="prefetch" href="/assets/js/11.c5afaf4d.js"><link rel="prefetch" href="/assets/js/12.29f8ffe0.js"><link rel="prefetch" href="/assets/js/13.72d8472d.js"><link rel="prefetch" href="/assets/js/14.7281b32d.js"><link rel="prefetch" href="/assets/js/15.112e25e7.js"><link rel="prefetch" href="/assets/js/16.8e5d43a7.js"><link rel="prefetch" href="/assets/js/17.5f416062.js"><link rel="prefetch" href="/assets/js/18.ad288b39.js"><link rel="prefetch" href="/assets/js/19.a74f651a.js"><link rel="prefetch" href="/assets/js/21.f382fe96.js"><link rel="prefetch" href="/assets/js/22.b82138c3.js"><link rel="prefetch" href="/assets/js/23.3573f322.js"><link rel="prefetch" href="/assets/js/24.3b2ba7ee.js"><link rel="prefetch" href="/assets/js/3.77fa11a2.js"><link rel="prefetch" href="/assets/js/4.992b99eb.js"><link rel="prefetch" href="/assets/js/5.19f05749.js"><link rel="prefetch" href="/assets/js/6.0a7a7c97.js"><link rel="prefetch" href="/assets/js/7.e62bd360.js"><link rel="prefetch" href="/assets/js/8.231d87cc.js"><link rel="prefetch" href="/assets/js/9.f873c084.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.c8dda0a3.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">duoduo</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/architect/" class="nav-link">
+  前端系列
+</a></div><div class="nav-item"><a href="/spring/" class="nav-link router-link-active">
+  Spring
+</a></div><div class="nav-item"><a href="/dao/" class="nav-link">
+  持久层
+</a></div><div class="nav-item"><a href="/else/" class="nav-link">
+  Else
+</a></div><div class="nav-item"><a href="/About/" class="nav-link">
+  About
+</a></div><div class="nav-item"><a href="https://github.com/duo-duo" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/architect/" class="nav-link">
+  前端系列
+</a></div><div class="nav-item"><a href="/spring/" class="nav-link router-link-active">
+  Spring
+</a></div><div class="nav-item"><a href="/dao/" class="nav-link">
+  持久层
+</a></div><div class="nav-item"><a href="/else/" class="nav-link">
+  Else
+</a></div><div class="nav-item"><a href="/About/" class="nav-link">
+  About
+</a></div><div class="nav-item"><a href="https://github.com/duo-duo" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/spring/details/" class="active sidebar-link">SpringBoot 入门</a></li><li><a href="/spring/details/Spring_Boot.html" class="sidebar-link">Spring_Boot</a></li><li><a href="/spring/details/Spring_Cache.html" class="sidebar-link">Spring_Cache</a></li><li><a href="/spring/details/Spring_Interceptor.html" class="sidebar-link">Interceptor Spring拦截器</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="springboot-入门"><a href="#springboot-入门" class="header-anchor">#</a> SpringBoot 入门</h1> <p>1.简介</p> <blockquote><p>简化Spring应用开发的一个框架；
+整个Spring技术栈的一个大整合；
+J2EE开发的一站式解决方案；</p></blockquote> <p>2.微服务</p> <blockquote><p>2014，martin fowler
+微服务：架构风格（服务微化）
+一个应用应该是一组小型服务；可以通过HTTP的方式进行互通；
+单体应用：ALL IN ONE
+微服务：每一个功能元素最终都是一个可独立替换和独立升级的软件单元；
+详细参照微服务文档</p></blockquote> <p>3.环境准备</p> <blockquote><p>环境约束
+–jdk1.8：Spring Boot 推荐jdk1.7及以上；java version &quot;1.8.0_112&quot;
+–maven3.x：maven 3.3以上版本；Apache Maven 3.3.9
+–IntelliJIDEA2019：IntelliJ IDEA 2019.2.3 x64、STS
+–SpringBoot 2.2.4.RELEASE：2.2.4；
+统一环境；</p></blockquote></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/duo-duo/isduoduo.me/edit/master/spring/details/README.md" target="_blank" rel="noopener noreferrer">帮助我改善此页面！</a> <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></div> <!----></footer> <div class="page-nav"><p class="inner"><!----> <span class="next"><a href="/spring/details/Spring_Boot.html">
+        Spring_Boot
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.2ba1e459.js" defer></script><script src="/assets/js/2.85e0188b.js" defer></script><script src="/assets/js/20.4545d333.js" defer></script>
+  </body>
+</html>
